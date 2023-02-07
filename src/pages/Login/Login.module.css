@@ -1,0 +1,15 @@
+.login {
+    text-align: center;
+}
+
+.login p {
+    color: #AAA
+}
+
+.error {
+    border: 1px, solid rgb(121, 119, 119);
+    background-color: rgb(255, 208, 208);
+    padding: 0.5em;
+    border-radius: 10px;
+    color: rgb(66, 65, 65);
+}
