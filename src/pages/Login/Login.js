@@ -10,8 +10,16 @@ const Login = () => {
   const [error, setError] = useState("")
 
   const {login, error: authError, loading} = useAuthentication();
-
-  const handleSubmit = async (e) => {
+  
+    useEffect(() => {
+        return () => setEmail("test@test.com"); 
+    }, []);
+    
+    useEffect(() => {
+        return () => setPassword("test123"); 
+    }, []);
+  
+    const handleSubmit = async (e) => {
       e.preventDefault();
       setError("");
      
@@ -39,7 +47,7 @@ const Login = () => {
                 type="email" 
                 name="email" 
                 required 
-                placeholder='E-mail do usuário'
+                placeholder='email de teste: test@test.com'
                 value={email}
                 onChange={(e) => setEmail(e.target.value) }
                 />
@@ -50,7 +58,7 @@ const Login = () => {
                 type="password" 
                 name="password" 
                 required 
-                placeholder='E-mail do usuário'
+                placeholder='senha: test123'
                 value={password}
                 onChange={(e) => setPassword(e.target.value) }
                 />
