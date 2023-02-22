@@ -25,6 +25,7 @@ nav button {
     font-size: 1em;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
+    color: black;
 }
 
 a:hover,
@@ -95,4 +96,24 @@ textarea {
 .btn-danger:hover {
     background-color: #fc4d4d;
     color: #fff;
+    
 }
+
+@media only screen and (max-device-width: 600px) {
+    .btn.btn-outline {
+        background-color: transparent;
+        border-radius: 0;
+        color: #000;
+        border: 1px solid #000;
+     
+    } 
+    }
+
+    @media only screen and (max-device-width: 514px) {
+        .btn.btn-outline {
+            background-color: transparent;
+            border-radius: 0;
+            color: #000;
+            border: 1px solid #000;        
+        }    
+        }

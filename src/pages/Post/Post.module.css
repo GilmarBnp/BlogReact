@@ -35,3 +35,7 @@
   .tags span {
     font-weight: bold;
   }
+
+  @media screen and (max-device-width: 600px) {
+    .img {max-width: 100%;} 
+    }

@@ -8,3 +8,33 @@
     width: 100%;    
     text-align: center;   
 }
+
+@media screen and (max-device-width: 800px) {
+    .footer {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #edf3f6;
+        width: 100%;    
+        text-align: center;   
+    }
+
+    .footer h3 {font-size: .8em;}
+}
+
+@media screen and (max-device-width: 900px) {
+    .footer {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #edf3f6;
+        width: 100%;
+        text-align: center;   
+    }
+
+    .footer h3 {font-size: .8em;}
+}

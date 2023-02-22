@@ -23,3 +23,28 @@ margin-bottom: 2em;
     color: rgb(0, 0, 0);
 }
 
+@media screen and (max-device-width: 600px) {
+    .create_post h2  {font-size: 1em;} 
+    .create_post p {font-size: .7em; margin-bottom: 1em;}
+    .create_form form  {font-size: .7em;} 
+    .create_post span {
+        font-size: .7em;
+    }
+    .create_post input {margin-bottom: .1em;}
+
+}
+
+@media screen and (max-device-width: 500px) {
+    .create_post h2  {font-size: 1em;} 
+    .create_post p {font-size: .7em; margin-bottom: 1em;}
+    .create_form form  {font-size: .5em;} 
+    .create_post span {
+        font-size: .6em;
+    }
+    .create_post input {margin-bottom: .1em;
+                        font-size: .5em;
+                        padding-right: 0.5em;}
+    
+}
+
+

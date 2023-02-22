@@ -30,3 +30,7 @@
     padding: 10px 25px;
 }
 
+@media only screen and (max-device-width: 600px) {
+    form input {font-size: .7em;}
+    }
+

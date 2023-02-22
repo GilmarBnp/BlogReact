@@ -12,12 +12,12 @@ const Login = () => {
   const {login, error: authError, loading} = useAuthentication();
   
     useEffect(() => {
-        return () => setEmail("test@test.com"); 
-    }, []);
+    setEmail("test@test.com"); 
+    });
     
     useEffect(() => {
         return () => setPassword("test123"); 
-    }, []);
+    });
   
     const handleSubmit = async (e) => {
       e.preventDefault();
@@ -37,7 +37,7 @@ const Login = () => {
   },[authError])
 
   return (
-    <div>
+    <div className={styles.loginForm}>
        <h1>Entrar</h1>
         <p>Faça login para entrar no sistema</p>
         <form onSubmit={handleSubmit}>
@@ -47,7 +47,7 @@ const Login = () => {
                 type="email" 
                 name="email" 
                 required 
-                placeholder='email de teste: test@test.com'
+                placeholder='test@test.com'
                 value={email}
                 onChange={(e) => setEmail(e.target.value) }
                 />
@@ -58,7 +58,7 @@ const Login = () => {
                 type="password" 
                 name="password" 
                 required 
-                placeholder='senha: test123'
+                placeholder='test123'
                 value={password}
                 onChange={(e) => setPassword(e.target.value) }
                 />

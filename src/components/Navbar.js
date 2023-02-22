@@ -16,7 +16,7 @@ const Navbar = () => {
         <h2>Mini<span className={styles.brand_span}>Blog </span></h2> 
         <ul className={styles.links_list}>
             <li className={styles.brand}>
-             
+          
               <NavLink to='/' 
               className={({isActive})=> (isActive ? styles.active : '') }>
                 Home</NavLink>
@@ -32,8 +32,7 @@ const Navbar = () => {
              </>
               )}
               {user && (
-                <>
-               
+                <>  
                 <NavLink to='/posts/create' 
                 className={({isActive})=> (isActive ? styles.active : '') }>
                   Criar post</NavLink>
@@ -41,21 +40,21 @@ const Navbar = () => {
                 <NavLink to='/dashboard' 
                 className={({isActive})=> (isActive ? styles.active : '') }>
                   Dashboard</NavLink>
-                </>
-
-              )}
+                
+                <button onClick={logout}>Sair</button>   
+             </>
+             )}
+              <> 
               <NavLink to='/about' 
               className={({isActive})=> (isActive ? styles.active : '') }>
-                Sobre</NavLink>  
+                Sobre</NavLink>
+              </>
+                <>
             
-              
+                </>
             </li>
-
-            {user && (
-              <li className={styles.brand}>
-                <button onClick={logout}>Sair</button>
-              </li>
-            )}
+           
+            
         </ul>  
     </nav>
   )

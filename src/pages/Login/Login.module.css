@@ -13,3 +13,10 @@
     border-radius: 10px;
     color: rgb(66, 65, 65);
 }
+
+@media only screen and (max-device-width: 600px) {
+    h1 {font-size: 1.2em;}
+    p {font-size: 0.8;}
+    .loginForm form {max-width: 33%;}
+    
+    }

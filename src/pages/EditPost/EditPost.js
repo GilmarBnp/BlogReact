@@ -81,7 +81,7 @@ const EditPost = () => {
 
   return (
     
-    <div className={styles.Edit_post}>
+    <div className={styles.edit_post}>
         <h2>Editar post</h2>
         <p>Edite o seu post como desejar</p>
         
@@ -105,11 +105,12 @@ const EditPost = () => {
                 placeholder='Insira uma mensagem que represente o seu post'
                 onChange={(e) => setImage(e.target.value)}
                 value={image} />
-         </label>
+         </label>  
          <label>
-           <p className={styles.preview_title}>Preview da imagem</p>
-         <img src={post.image} alt={post.title} />
+         <p className={styles.preview_title}>Preview da imagem</p>
+         <img src={post.image} alt={post.title} className={styles.image}/>
          </label>
+          
          <label>
             <span>Conteúdo:</span>
              <textarea name="body" 

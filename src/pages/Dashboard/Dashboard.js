@@ -32,9 +32,8 @@ export const Dashboard = () => {
         ) : (
           <>
            <div className={styles.post_header}>
-           <span></span>
-            <span>Ações</span>
-              
+            <span>Posts</span>     
+            <span>Ações</span>  
           </div>
 
           {posts && posts.map((post) => 
@@ -42,7 +41,7 @@ export const Dashboard = () => {
             <img src={post.image} alt={post.title} className={styles.image} />
            <p>{post.title}</p>
           
-          <div>
+          <div className={styles.buttonDashContainer}>
             <Link to={`/posts/${post.id}`} className='btn btn-outline'>Ver</Link>
             <Link to={`/posts/edit/${post.id}`} className='btn btn-outline'>Editar</Link>
             <button onClick={() => deleteDocument(post.id)} className='btn btn-outline btn-danger'>Excluir</button>
@@ -50,10 +49,10 @@ export const Dashboard = () => {
           </div>)}
           </>
          
-        )};
+        )}
       
     </div>
-  );
+  )
 };
 
 export default Dashboard
